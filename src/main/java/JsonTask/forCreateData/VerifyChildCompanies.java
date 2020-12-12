@@ -5,15 +5,13 @@ import org.json.simple.JSONObject;
 import java.util.Set;
 
 public class VerifyChildCompanies {
-    private  JSONObject childCompanies;
 
-    public JSONObject getChildCompanies() {
+    private JSONObject getChildCompanies() {
         JSONObject jsonData=(new ReadJsonData()).getJsonObject();
-        childCompanies=(JSONObject) ((JSONObject) jsonData.get("manufacturers")).get("childCompanies");
-        return childCompanies;
+        return (JSONObject) ((JSONObject) jsonData.get("manufacturers")).get("childCompanies");
     }
 
-    public boolean isExists(Object company) {
+    public boolean isExistsCompany(Object company) {
         boolean isContains = false;
         Set list = getChildCompanies().entrySet();
         for (Object childCompanies : list) {
