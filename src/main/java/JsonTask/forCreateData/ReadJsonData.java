@@ -16,7 +16,7 @@ public class ReadJsonData {
     private void  getJsonObjectJsonData() {
         JSONParser parser = new JSONParser();
         try {
-            Object obj = parser.parse(new FileReader("D:\\jsonTask.json"));
+            Object obj = parser.parse(new FileReader("src\\main\\resources\\jsonTask.json"));
             jsonObject = (JSONObject) obj;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
