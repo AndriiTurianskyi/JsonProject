@@ -1,8 +1,7 @@
 import JsonTask.forCreateData.Company;
 import JsonTask.forCreateData.CreateCompanies;
-import JsonTask.steps.IsExistsSteps;
+import JsonTask.steps.IsExists;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class JsonTaskTest {
@@ -16,14 +15,14 @@ public class JsonTaskTest {
 
     @Test
     public void verifyIfGoogleExistsInJsonData() {
-        IsExistsSteps isExistsSteps = new IsExistsSteps();
+        IsExists isExistsSteps = new IsExists();
         Company google= (new CreateCompanies()).getGoogle();
         Assert.assertTrue(isExistsSteps.check(google));
     }
 
     @Test
     public void verifyIfAppleExistsInJsonData() {
-        IsExistsSteps isExistsSteps = new IsExistsSteps();
+        IsExists isExistsSteps = new IsExists();
         Company apple= (new CreateCompanies()).getApple();
         Assert.assertFalse(isExistsSteps.check(apple));
     }

@@ -1,5 +1,6 @@
-package JsonTask.forCreateData;
+package JsonTask.steps;
 
+import JsonTask.forCreateData.ReadJsonData;
 import org.json.simple.JSONObject;
 
 import java.util.Set;
