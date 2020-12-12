@@ -14,7 +14,7 @@ public class VerifyChildCompanies {
 
     public boolean isExistsCompany(Object company) {
         boolean isContains = false;
-        Set list = getChildCompanies().entrySet();
+        Set<Object> list = getChildCompanies().entrySet();
         for (Object childCompanies : list) {
             if (childCompanies.toString().equals(company.toString())) {
                 isContains = true;
