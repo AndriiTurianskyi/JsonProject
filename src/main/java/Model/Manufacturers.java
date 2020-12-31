@@ -1,6 +1,7 @@
 package Model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Manufacturers {
     private String siteAddress;
@@ -8,7 +9,7 @@ public class Manufacturers {
     private String reportSource;
     private String officePhoneNumber;
     private String siteName;
-    private ArrayList< Object > childCompanies = new ArrayList < Object > ();
+    private List< Company > childCompanies;
 
 
     // Getter Methods
@@ -33,7 +34,7 @@ public class Manufacturers {
         return siteName;
     }
 
-    public ArrayList<Object> getChildCompanies() {
+    public List<Company> getChildCompanies() {
         return childCompanies;
     }
 
@@ -59,7 +60,7 @@ public class Manufacturers {
         this.siteName = siteName;
     }
 
-    public void setChildCompanies(ArrayList<Object> childCompanies) {
+    public void setChildCompanies(List<Company> childCompanies) {
         this.childCompanies = childCompanies;
     }
 }

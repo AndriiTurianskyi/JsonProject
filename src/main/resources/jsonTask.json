@@ -19,25 +19,19 @@
     "siteName": "Test Inc Ltd",
     "childCompanies": [
       {
-        "Amazon": {
-          "address": "Amazon Address",
-          "state": "LA",
-          "phone": "123456"
-        }
+        "address": "Amazon Address",
+        "state": "LA",
+        "phone": "123456"
       },
       {
-        "Ebay": {
-          "address": "Ebay Address",
-          "state": "TA",
-          "phone": "123456"
-        }
+        "address": "Ebay Address",
+        "state": "TA",
+        "phone": "123456"
       },
       {
-        "Google": {
-          "address": "Google Address",
-          "state": "FL",
-          "phone": "133756"
-        }
+        "address": "Google Address",
+        "state": "FL",
+        "phone": "133756"
       }
     ]
   },
