@@ -30,4 +30,9 @@ public class Company {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+
+    public boolean equals(Company obj) {
+        return (address.equals(obj.address)) && (state.equals(obj.state)) && phone.equals(obj.phone);
+    }
 }
