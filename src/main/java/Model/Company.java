@@ -31,8 +31,14 @@ public class Company {
         this.phone = phone;
     }
 
-
-    public boolean equals(Company obj) {
-        return (address.equals(obj.address)) && (state.equals(obj.state)) && phone.equals(obj.phone);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Company company = (Company) o;
+        return address.equals(company.address) &&
+                state.equals(company.state) &&
+                phone.equals(company.phone);
     }
+
 }

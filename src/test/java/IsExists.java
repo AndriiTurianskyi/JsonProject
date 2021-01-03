@@ -21,15 +21,7 @@ public class IsExists {
         apple.setPhone("3756");
 
         JSonUtil jSon=new JSonUtil();
-        Assert.assertTrue(isExistsInchildCompany(jSon.jSonToJava().getManufacturers().getChildCompanies(),google));
-        Assert.assertFalse(isExistsInchildCompany(jSon.jSonToJava().getManufacturers().getChildCompanies(),apple));
-    }
-    public boolean isExistsInchildCompany(List<Company> childCompany, Company verifyCompany){
-        for (Company company:childCompany){
-            if (company.equals(verifyCompany)){
-                return true;
-            }
-        }
-        return false;
+        Assert.assertTrue(jSon.jSonToJava().getManufacturers().getChildCompanies().contains(google));
+        Assert.assertFalse(jSon.jSonToJava().getManufacturers().getChildCompanies().contains(apple));
     }
 }
